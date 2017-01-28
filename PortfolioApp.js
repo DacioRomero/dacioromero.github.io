@@ -14,7 +14,7 @@ PortfolioApp.directive('navBar', function() {
   }
 });
 
-PortfolioApp.directive("cotent", function() {
+PortfolioApp.directive("content", function() {
   return {
     restrict: 'E',
     transclude: true,
