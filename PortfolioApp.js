@@ -10,7 +10,18 @@ PortfolioApp.controller('NavBar', ['$scope', function($scope) {
 PortfolioApp.directive('navBar', function() {
   return {
     templateUrl: function(elem) {
-      return 'navbar.html'
+      restrict: 'E',
+      templateUrl: 'navbar.html'
     }
   }
 });
+
+PortfolioApp.directive("cotent", function() {
+  return {
+    templateUrl: function() {
+      restrict: 'E',
+      transclude: true,
+      templateUrl: 'content.html'
+    }
+  }
+})
