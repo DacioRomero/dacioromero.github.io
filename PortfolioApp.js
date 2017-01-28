@@ -6,3 +6,11 @@ PortfolioApp.controller('NavBar', ['$scope', function($scope) {
     {name: 'About', url:'about.html'}
   ];
 }]);
+
+PortfolioApp.directive('navBar', function() {
+  return {
+    templateUrl: function(elem) {
+      return 'navbar.html'
+    }
+  }
+});
