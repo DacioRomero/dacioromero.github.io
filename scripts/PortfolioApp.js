@@ -13,11 +13,3 @@ PortfolioApp.directive('navBar', function() {
     templateUrl: '../templates/navbar.html'
   }
 });
-
-PortfolioApp.directive("content", function() {
-  return {
-    restrict: 'E',
-    transclude: true,
-    templateUrl: '../templates/content.html'
-  }
-})
