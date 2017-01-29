@@ -1,15 +1,17 @@
 var PortfolioApp = angular.module('portfolioApp', []);
-PortfolioApp.controller('NavBar', ['$scope', function($scope) {
-  $scope.pages = [
-    {name: 'Home', url:'index.html'},
-    {name:'Works', url:'works.html'},
-    {name: 'About', url:'about.html'}
-  ];
-}]);
 
-PortfolioApp.directive('navBar', function() {
+PortfolioApp.directive('navTemplate', function() {
   return {
     restrict: 'E',
-    templateUrl: '../templates/navbar.html'
+    replace: true,
+    templateUrl: '../templates/nav.html'
   }
 });
+
+PortfolioApp.directive('footerTemplate', function() {
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: '../templates/footer.html'
+  }
+})

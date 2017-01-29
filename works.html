@@ -2,14 +2,22 @@
 <html>
 	<head>
 		<title>Dacio Romero</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
 		<script src="./scripts/PortfolioApp.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="./css/main.css">
 	</head>
 	<body ng-app="portfolioApp">
-		<nav-bar></nav-bar>
+		<nav-template></nav-template>
+		<div class="container">
+			<div class="page-header">
+				<h1>Works</h1>
+			</div>
+		</div>
+		<footer-template></footer-template>
+		<!--Boostrap scripts, placed for performance-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</body>
 </html>
